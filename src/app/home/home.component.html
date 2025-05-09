@@ -1,0 +1,53 @@
+<div class="container mt-4">
+   
+    <!-- العروض اليومية -->
+    <div class="container mt-4">
+        <!-- ترحيب -->
+        <h2 class="mb-3"> My Store</h2>
+        <p>Don't miss today's hottest deals 🔥</p><p id="text">
+            This is some short text.
+            <!-- بدل style="display:none" هنستخدم binding -->
+            <span id="moretext"
+                  [style.display]="showMore ? 'inline' : 'none'">
+              Here is some extra text that will appear when you click on "Read more".
+            </span>
+          </p>
+          
+          <!-- بدّل onclick ب (click) وحوّل النص بالداتا‑بندينج -->
+          <span id="readmore"
+                (click)="toggleText()"
+                [style.color]="showMore ? 'blue' : 'red'"
+                style="cursor: pointer; text-decoration: underline;">
+            {{ showMore ? 'Read less' : 'Read more' }}
+          </span>
+          
+        <!-- العروض اليومية -->
+        <h4 class="mt-4 mb-3">🔥 Daily Deals  </h4>
+      
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/300x200?text=Headphones" class="card-img-top" alt="Wireless Headphones">
+              <div class="card-body">
+                <h5 class="card-title">Wireless Headphones</h5>
+                <p class="card-text text-success">Now only $29.99</p>
+             
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/300x200?text=Smart+Watch" class="card-img-top" alt="Smart Watch">
+              <div class="card-body">
+                <h5 class="card-title">Smart Watch</h5>
+                <p class="card-text text-success">Now only $49.99</p>
+               
+              </div>
+            </div>
+          </div>
+      
+         
+        </div>
+      </div>
+      

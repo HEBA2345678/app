@@ -1,0 +1,118 @@
+<p>about works!</p>
+<style>
+    body {
+      background-color: #f8f9fa;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  /* لتوسيط المحتوى أفقيًا */
+      align-items: center;  /* لتوسيط المحتوى عموديًا */
+      margin: 0;
+    }
+    .welcome-box {
+      background-color: #ffffff;
+      padding: 40px 20px;  /* تقليل padding للأجهزة الصغيرة */
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: fadeIn 2s forwards; /* إضافة أنيميشن */
+      width: 90%;  /* العرض 90% من الشاشة */
+      max-width: 600px;  /* حد أقصى 600px للعرض */
+    }
+    .welcome-box h1 {
+      opacity: 0;
+      animation: fadeInText }
+
+
+
+    .section-title {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+
+    /* ترتيب المربعات باستخدام Bootstrap Grid */
+    .row {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 767px) {
+      /* تعديل عرض المربعات على الأجهزة الصغيرة */
+      .card {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+
+
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Latest Products</h2>
+      <p>Discover the best of technology with our exclusive collection</p>
+    </div>
+
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Product 1" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Smart Watch</h5>
+            <p class="card-text">Experience the future of timekeeping with our advanced smart watches.</p>
+            <a href="#" class="btn btn-outline-danger">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Product 2" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Bluetooth Headphones</h5>
+            <p class="card-text">Enjoy wireless freedom with high-quality sound for every occasion.</p>
+            <a href="#" class="btn btn-outline-danger">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Product 3" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Smartphone</h5>
+            <p class="card-text">Stay connected with the latest smartphone technology at your fingertips.</p>
+            <a href="#" class="btn btn-outline-danger">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Additional Cards if needed -->
+    </div>
+  </div>

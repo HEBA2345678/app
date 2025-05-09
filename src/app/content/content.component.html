@@ -1,0 +1,114 @@
+ <style>
+    .contact-section {
+      padding: 50px 0;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info .info-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-info .info-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-info .info-box i {
+      font-size: 2rem;
+      margin-right: 15px;
+    }
+
+    .contact-info h5 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .map-container {
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .row {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 767px) {
+      .map-container {
+        height: 300px;
+      }
+    }
+  </style>
+
+
+  <div class="container contact-section">
+    <div class="row">
+      <!-- Location Section -->
+      <div class="col-md-6">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.093352514558!2d29.963362874343392!3d31.245838960656464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52fadf4220f%3A0x7d08dceaad4557bd!2sSan%20Stefano%20Grand%20Plaza!5e0!3m2!1sen!2seg!4v1745705064167!5m2!1sen!2seg" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+         
+        </div>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="col-md-6 contact-info">
+        <h2>Contact Us</h2>
+
+        <div class="info-box">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h5>Our Location</h5>
+            <p>1234 Main Street, New York, NY 10001</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h5>Email</h5>
+            <p>support-example.com</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h5>Phone</h5>
+            <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-fax"></i>
+          <div>
+            <h5>Fax</h5>
+            <p>+1 (555) 765-4321</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h5>Working Hours</h5>
+            <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
